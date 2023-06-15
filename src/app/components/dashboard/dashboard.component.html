@@ -1,0 +1,5 @@
+<div class="d-flex flex-wrap justify-content-space-between">
+    <div *ngFor="let user of users" class="m-2">
+            <app-user-card [user]="user" (userEmit)="goToDetails($event)"></app-user-card>
+    </div>
+</div>
