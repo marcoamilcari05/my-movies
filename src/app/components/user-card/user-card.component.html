@@ -3,6 +3,9 @@
     <div class="card-body">
       <h5 class="card-title">{{index}} - {{user?.first_name}} {{user?.last_name}}</h5>
       <p class="card-text">{{user?.first_name | mail}}</p>
-      <button class="btn btn-primary" (click)="onDetailsClick()">Go to details</button>
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-primary" (click)="onDetailsClick()">Go to details</button>
+         <button class="btn btn-danger" (click)="onRemoveClick()">Remove</button> 
+      </div>
     </div>
   </div>

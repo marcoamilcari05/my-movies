@@ -33,4 +33,8 @@ export class DashboardComponent {
     this.router.navigateByUrl('/user-details');
   }
 
+  removeUser = (_id: number) => {
+    this.users = this.users.filter(user => user.id !== _id);
+  }
+
 }

@@ -1,6 +1,6 @@
 <div class="d-flex flex-wrap justify-content-space-between">
     <div *ngFor="let user of users; let i=index" class="m-2">
-            <app-user-card [user]="user" (userEmit)="goToDetails($event)" [index]="i"></app-user-card>
+            <app-user-card [user]="user" (userEmit)="goToDetails($event)" (userIdEmit)="removeUser($event)" [index]="i"></app-user-card>
     </div>
 </div>
 <button class="m-2 btn btn-secondary" (click)="getUsersFromService()">Show more...</button>
