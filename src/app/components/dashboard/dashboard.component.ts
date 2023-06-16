@@ -20,7 +20,8 @@ export class DashboardComponent {
     this.usersService.getUsers().subscribe({
       next: (response: any) => {
         console.log(response);
-        this.users = response;
+        // this.users = response;
+        this.users = [...this.users, ...response];
       } ,
       error: err => console.log(err),
       complete: () => console.log('ho finito')

@@ -10,6 +10,8 @@ export class UserCardComponent {
 
   @Input() user: User | undefined = undefined;
 
+  @Input() index: number = 0;
+
   @Output() userEmit = new EventEmitter<User>();
 
   onDetailsClick = () => {
